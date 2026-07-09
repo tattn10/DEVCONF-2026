@@ -61,6 +61,9 @@ nav {
     font-size: 1rem;
     color: #575757;
 }
+.nav-menu li a:hover{
+    color:#1f1f1f;
+}
 
 
 
@@ -104,7 +107,7 @@ main{
     margin: 4em 0;
 }
 .meet-speakers{
-    margin-top: 5em;
+    margin: 5em 0;
     text-align: center;
 }
 .meet-speakers h1{
@@ -124,6 +127,10 @@ main{
     height: 100%;
     border-radius: 12px;
 }
+.speaker-card:hover{
+    transform: scale(1.01);
+    transition: .8s ease-in-out;
+}
 
 .speaker-card .speaker-img img{
     width: 100%;
@@ -142,4 +149,106 @@ main{
 
 .speaker-intro > p{
     font-size: 12px;
+}
+
+
+/* secure spot styles */
+.secure-spot{
+    position: relative;
+    text-align: center;
+    margin: 7em 0;
+}
+.underlay-img{
+    position: absolute;
+    z-index: -5;
+    top: 2em;
+    left: 25%;
+}
+.underlay-img img{
+    opacity: .9;
+}
+.secure-spot h2{
+    font-size: 2rem;
+    padding: 12px 0;
+}
+
+.package-card-conatainer{
+    display: flex;
+   gap: 24px;
+   margin: 4em 0;
+   justify-content: center;
+}
+
+.package-card{
+    text-align: left;
+    padding:32px;
+    border: 1px solid #E5E7EB;
+   max-width: 370px ;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column ;
+    justify-content: space-evenly;
+    background-color: white;
+}
+.package-card:hover{
+    transform: scale(1.02);
+    transition: .8s ease-in-out;
+}
+
+.package-card .package-top > p{
+    font-size: 12px;
+     font-weight:400;
+}
+
+.package-card .package-top > h2{
+    padding: 6px 0;
+}
+
+.package-card hr{
+    margin: 20px 0;
+}
+
+.package-card  ul{
+    list-style-position: inside;
+}
+
+.package-card ul li{
+    padding: 10px 0;
+    color:#333333;
+}
+
+.package-card ul li::marker{
+    color:#2563EB;
+}
+.package-card .package-btn button{
+    width: 100%;
+    text-align: center;
+    color:#2563EB;
+    background-color: white;
+    border:1px solid #2563EB;
+    font-weight:bolder;
+    margin-top: 20px;
+}
+.pro{
+    background-color: #0D1B2A;
+    border: 1px solid #0D1B2A;
+    color: white;
+}
+.pro ul li{
+ color: rgba(255,255,255,.8);
+}
+
+.pro .package-btn button{
+    background-color: #2563EB;
+    color: white;
+    border: none;
+}
+.team{
+    background-color: #F8F9FB;
+    border: 1px solid #E5E7EB;
+}
+.team .package-btn button{
+    background-color: #F8F9FB;
+    color: #0D1B2A;
+    border: 1px solid #0D1B2A;
 }
